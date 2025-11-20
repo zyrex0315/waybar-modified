@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  // "height": 24, // Uncomment to set a fixed height
+  "height": 25, // Uncomment to set a fixed height
   // Note: The layout may break if height is greater than 24
   "mode": "dock",
   "reload_style_on_change": true,
@@ -45,7 +45,9 @@
 
     "custom/wifi",          // wi-fi
     "bluetooth",            // bluetooth
-    "custom/update",        // system update
+    "custom/updates",        // system update
+    "custom/notification",  //notifications
+    
     "custom/right5"
   ],
 
@@ -74,17 +76,35 @@
     "max-length": 3
   },
 
-  "hyprland/workspaces": {
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    }
-  },
+ 
+	"hyprland/workspaces": {
+		// "active-only":
+		// "hide-active":
+		// "all-outputs":
+		"format": "{icon}",
+		"format-icons": {
+			"3": "󰊠",
+			"5": "󰊠",
+			"active": "󰮯",
+			"default": ""
+		},
+		"persistent-workspaces": {
+			"*": 5
+		},
+		// "persistent-only":
+		// "show-special":
+		// "special-visible-only":
+		// "sort-by":
+		// "window-rewrite":
+		// "window-rewrite-default":
+		// "format-window-separator":
+		// "move-to-monitor":
+		// "ignore-workspaces":
+		// "on-scroll-up":
+		// "on-scroll-down":
+		"cursor": true
+	},
+
 
   "hyprland/window": {
     "format": "{}",
@@ -400,10 +420,11 @@
     "format": "",
     "tooltip": false
   },
-  "custom/left2": {
+    "custom/left2": {
     "format": "",
     "tooltip": false
   },
+
   "custom/left3": {
     "format": "",
     "tooltip": false
@@ -447,10 +468,11 @@
     "format": "",
     "tooltip": false
   },
-  "custom/right5": {
+   "custom/right5": {
     "format": "",
     "tooltip": false
   },
+ 
 
   // == Left Inverse ==
 
