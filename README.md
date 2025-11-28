@@ -9,13 +9,6 @@
     <summary><strong>&nbsp;🚀 Rofi Menus</strong></summary>
     <br />
 
-  | 🛜 Wi-Fi and Bluetooth                                 |
-  | :----------------------------------------------------: |
-  | ![Wi-Fi Menu](assets/wifi-menu.png) <tr></tr>          |
-  | ![Bluetooth Menu](assets/bluetooth-menu.png) <tr></tr> |
-  | `on-click-right`: **`nmtui`**, **`bluetui`** <tr></tr> |
-  | ![Bluetooth Menu](assets/wifi-bluetooth-tui.png)       |
-
   | ⏸️ Logout                                              |
   | :----------------------------------------------------: |
   | ![Logout Menu](assets/logout-menu.png)                 |
