@@ -348,7 +348,7 @@ tooltip label {
   margin-bottom: -2px;
 }
 #custom-power {
-  color: @main-bg;
+  color: @white;
   background: @power;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 0 2px 1px rgba(0, 0, 0, 0.6);
