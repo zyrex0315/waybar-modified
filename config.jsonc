@@ -250,11 +250,11 @@
   },
 
 "clock#time": {
-    "format": "󱑂 {:%I:%M %p}",
+    "format": "󱑂 {:%I:%M}",
     "tooltip": true,
     "tooltip-format": "24-Hour Time: {:%H:%M}",
-    "min-length": 11,
-    "max-length": 11
+    "min-length": 8,
+    "max-length": 8
   },
 
 
