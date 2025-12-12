@@ -1,5 +1,8 @@
-/* Gruvbox Dark */
 
+
+
+@import url("../../.cache/wal/colors-waybar.css");
+@define-color accent @color5;
 @define-color bg0_h           #1d2021;
 @define-color bg0             #282828;
 @define-color bg1             #3c3836;
@@ -43,30 +46,30 @@
 @define-color main-bg         alpha(@black, 0);
 @define-color main-br         @fg0;
 
-@define-color active-bg       @vibrant-pink;
+@define-color active-bg      @color4;
 @define-color active-fg       @bg0_h;
 
-@define-color hover-bg        @bg2;
-@define-color hover-fg        alpha(@fg0, 0.8);
+@define-color hover-bg        @color0;
+@define-color hover-fg        alpha(@fg0, 1);
 
 /* Module Colors */
 
 @define-color module-fg       @fg0;
-@define-color workspaces      alpha(@black, 0.8);
+@define-color workspaces      alpha(@color0,0.8);
 
-@define-color temperature     @bg0;
-@define-color memory          alpha(@bg0, 1);
-@define-color cpu             @bg1;
+@define-color temperature    alpha(@color0,0.8);
+@define-color memory          alpha(@bg0, 0.9);
+@define-color cpu             alpha(@bg1, 0.9);
 @define-color distro-fg       @white;
-@define-color distro-bg       @bright_purple ;
-@define-color time            @bg1;
-@define-color date            @bg0;
-@define-color tray            alpha(@black, 0.8);
+@define-color distro-bg       @color4;
+@define-color time            alpha(@bg1, 0.9);
+@define-color date            alpha(@bg0, 0.9);
+@define-color tray            alpha(@color0,0.8);
 
 @define-color pulseaudio      alpha(@black, 0.8);
-@define-color backlight       @bg0;
-@define-color battery         @bg1;
-@define-color power           @purple;
+@define-color backlight       alpha(@bg0, 0.9);
+@define-color battery          alpha(@bg1, 0.8);
+@define-color power           @color4;
 
 /* State Colors */
 
@@ -74,13 +77,4 @@
 @define-color critical        #fb4934; /* Updated to use existing bright_red variable */
 @define-color charging        @fg0;
 
-/* --- Suggested Colors from Sunset Image --- */
-
-/* --- Suggested Colors from Sunset Image --- */
-
-@define-color sunset-gold           #FFBF78;
-@define-color vibrant-pink          #E797B1;
-@define-color deep-vermilion        #EA2F14;
-@define-color twilight-purple       #614E7B;
-@define-color dark-silhouette       #4B0082;
 

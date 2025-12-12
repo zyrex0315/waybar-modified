@@ -249,13 +249,14 @@
     "timeout": 5
   },
 
-  "clock#time": {
-    "format": "󱑂 {:%H:%M}",
+"clock#time": {
+    "format": "󱑂 {:%I:%M %p}",
     "tooltip": true,
-    "tooltip-format": "Standard Time: {:%I:%M %p}",
-    "min-length": 8,
-    "max-length": 8
+    "tooltip-format": "24-Hour Time: {:%H:%M}",
+    "min-length": 11,
+    "max-length": 11
   },
+
 
   "clock#date": {
     "format": "󰨳 {:%m-%d}",
@@ -321,7 +322,7 @@
     "max-length": 1
   },
 
-  "custom/update": {
+  "custom/updates": {
     "exec": "~/.config/waybar/scripts/system-update.sh",
     "return-type": "json",
     "format": "{}",
@@ -399,7 +400,7 @@
   "custom/power": {
     "format": " ",
     "tooltip": false,
-    "on-click": "~/.config/waybar/scripts/logout-menu.sh"
+    "on-click": "wlogout -b 6 --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css"
   },
 
   // === Padding ===
