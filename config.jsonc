@@ -248,10 +248,6 @@
   "idle_inhibitor": {
     "format": " ",
        "start-activated": true,
-            "format-icons": {
-                "activated": "",
-                "deactivated": "󰛊"
-            },
         "tooltip-format-activated":"Caffeine Mode: Active \nNothing will be happen.",
         "tooltip-format-deactivated":"Caffeine Mode: Inactive\n\nIf there is no interaction with your\nsystem (mouse/keyboard), then \nScreen Lock: after 5 min \nScreen Off: after 10 min \nSleep: after 30 min"
           },
@@ -298,7 +294,7 @@
     "format": "{}",
     "tooltip": true,
     "on-click": "kitty -e ~/.config/waybar/scripts/network.sh",
-    "on-click-right": "kitty -e ~/.config/waybar/scripts/network.sh",
+    "on-click-right": "kitty -e nmtui",
     "interval": 1,
     "min-length": 1,
     "max-length": 1
@@ -322,7 +318,8 @@
       "{device_alias}: {device_battery_percentage}%",
 
     "on-click": "kitty -e ~/.config/waybar/scripts/bluetooth.sh",
-    "on-click-right": "kitty -e ~/.config/waybar/scripts/bluetooth.sh",
+    "on-click-right": "blueman-manager",
+
     "interval": 1,
     "min-length": 1,
     "max-length": 1
