@@ -2,6 +2,8 @@
 
   # Mechabar 🤖
 
+  #Supports pywal now
+
   | ![Preview 1](assets/v1.0.0.png)                        |
   | :----------------------------------------------------: |
 
